@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/az-vocabulary/static/css/main.15e89c1c.css",
+    "main.js": "/az-vocabulary/static/js/main.97bb9845.js",
+    "index.html": "/az-vocabulary/index.html",
+    "main.15e89c1c.css.map": "/az-vocabulary/static/css/main.15e89c1c.css.map",
+    "main.97bb9845.js.map": "/az-vocabulary/static/js/main.97bb9845.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15e89c1c.css",
+    "static/js/main.97bb9845.js"
+  ]
+}
