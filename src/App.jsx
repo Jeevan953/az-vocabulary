@@ -497,7 +497,6 @@ S: [
   { emoji: "📉", word: "Subpar", meaning: "below average" },                     // down chart
   { emoji: "🕊️", word: "Soaring", meaning: "rising" },                           // bird flying
   { emoji: "🌱", word: "Sod", meaning: "grassy land" },                           // grass
-  { emoji: "🪦", word: "Solemn", meaning: "serious" },                             // gravestone = solemn
   { emoji: "🪦", word: "Solemnly", meaning: "seriously" },                         // same as solemn
   { emoji: "💧", word: "Spillway", meaning: "dam water exit" },                    // water drop
   { emoji: "🏛️", word: "Spartan", meaning: "simple" },                             // classical building = simple
