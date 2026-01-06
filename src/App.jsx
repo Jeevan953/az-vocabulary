@@ -11,109 +11,125 @@ function App() {
 
   const vocabLists = {
     A: [
-      { emoji: "🟢", word: "Abundant", meaning: "plenty, assload" },
-      { emoji: "🔵", word: "Accommodation", meaning: "rooms" },
-      { emoji: "🟠", word: "Acauline", meaning: "stemless" },
-      { emoji: "🟣", word: "Accrued", meaning: "accumulated" },
-      { emoji: "🟤", word: "Acumen", meaning: "keenness of mind" },
-      { emoji: "🔴", word: "Adipose", meaning: "fatty" },
-      { emoji: "🟢", word: "Adumbrate", meaning: "outline" },
-      { emoji: "🟡", word: "Alacrity", meaning: "readiness" },
-      { emoji: "🔵", word: "Alimony", meaning: "maintenance" },
-      { emoji: "🟣", word: "Altruistic", meaning: "helpful" },
-      { emoji: "🟤", word: "Ambiguous", meaning: "unclear" },
-      { emoji: "🟡", word: "Ambiguity", meaning: "equivocation" },
-      { emoji: "🟢", word: "Ameliorate", meaning: "improve" },
-      { emoji: "🔵", word: "Aphrodisiac", meaning: "libido booster" },
-      { emoji: "🟠", word: "Antithetical", meaning: "totally different" },
-      { emoji: "🟣", word: "Apparent", meaning: "clearly seen" },
-      { emoji: "🟤", word: "Arbitrary", meaning: "random" },
-      { emoji: "🟡", word: "Assiduity", meaning: "sedulousness" },
-      { emoji: "🟢", word: "Axiom", meaning: "maxim" }
-    ],
-    B: [
-      { emoji: "🌈", word: "Boisterous", meaning: "very loud", color: "green" },
-      { emoji: "🌟", word: "Billet-doux", meaning: "epistle, missive", color: "blue" },
-      { emoji: "💫", word: "Blithesome", meaning: "a mirthful disposition", color: "orange" },
-      { emoji: "⭐", word: "Blitz", meaning: "aerial bombardment", color: "purple" },
-      { emoji: "⭐", word: "Brontide", meaning: "rumbling sound", color: "brown" },
-      { emoji: "⭐", word: "Brazen", meaning: "bold & without shame", color: "red" },
-      { emoji: "⭐", word: "Buxom", meaning: "comely, plump", color: "yellow" },
-      { emoji: "⭐", word: "Bucolic", meaning: "pastoral, rural", color: "green" },
-      { emoji: "⭐", word: "Backlash", meaning: "negative reaction", color: "blue" },
-      { emoji: "⭐", word: "Banausic", meaning: "mechanical, utilitarian", color: "orange" },
-      { emoji: "⭐", word: "Beverage", meaning: "drink", color: "purple" },
-      { emoji: "⭐", word: "Bestow", meaning: "give", color: "brown" },
-      { emoji: "⭐", word: "Blurry", meaning: "unclear, cloudy", color: "red" },
-      { emoji: "⭐", word: "Bombard", meaning: "assault", color: "yellow" },
-      { emoji: "⭐", word: "Bosom", meaning: "breast", color: "green" },
-      { emoji: "⭐", word: "Bodeful", meaning: "ominous", color: "blue" },
-      { emoji: "⭐", word: "Brolly", meaning: "umbrella", color: "orange" },
-      { emoji: "⭐", word: "Bruit", meaning: "spread widely", color: "purple" }
-    ],
-   C: [
-  { emoji: "🎉", word: "Caboodle", meaning: "entire lot" },
-  { emoji: "🥳", word: "Call off", meaning: "cancel" },
-  { emoji: "🎊", word: "Caldera", meaning: "volcanic crater" },
-  { emoji: "🎈", word: "Canyon", meaning: "deep gorge" },
-  { emoji: "🎉", word: "Cantankerous", meaning: "quarrelsome" },
-  { emoji: "🥳", word: "Carapace", meaning: "shell / integument" },
-  { emoji: "🎊", word: "Cast", meaning: "throw, (choose)" },
-  { emoji: "🎈", word: "Catarrh", meaning: "cold" },
-  { emoji: "🎉", word: "Catty-corner", meaning: "diagonal" },
-  { emoji: "🥳", word: "Cease", meaning: "stop" },
-  { emoji: "🎊", word: "Cecity", meaning: "blindness" },
-  { emoji: "🎈", word: "Chivalrous", meaning: "gallant" },
-  { emoji: "🎉", word: "Cite", meaning: "quote" },
-  { emoji: "🥳", word: "Circumspect", meaning: "cautious" },
-  { emoji: "🎊", word: "Cinerary", meaning: "ashes" },
-  { emoji: "🎈", word: "Cloudburst", meaning: "sudden heavy rain" },
-  { emoji: "🎉", word: "Cogent", meaning: "convincing" },
-  { emoji: "🥳", word: "Commence", meaning: "begin" },
-  { emoji: "🎊", word: "Commendable", meaning: "good" },
-  { emoji: "🎈", word: "Commiseration", meaning: "condolences" },
-  { emoji: "🎉", word: "Comestibles", meaning: "eatables" },
-  { emoji: "🥳", word: "Commination", meaning: "denunciation" },
-  { emoji: "🎊", word: "Conceited", meaning: "proud, haughty" },
-  { emoji: "🎈", word: "Concurrently", meaning: "simultaneous" },
-  { emoji: "🎉", word: "Condign", meaning: "worthy" },
-  { emoji: "🥳", word: "Confine / Corral", meaning: "enclosure" },
-  { emoji: "🎊", word: "Congenial", meaning: "pleasant" },
-  { emoji: "🎈", word: "Conspicuous", meaning: "noticeable" },
-  { emoji: "🎉", word: "Contemplate", meaning: "think" },
-  { emoji: "🥳", word: "Coral", meaning: "sea organism" },
-  { emoji: "🎊", word: "Cordillera", meaning: "chain of mountains" },
-  { emoji: "🎈", word: "Cosset", meaning: "pamper" },
-  { emoji: "🎉", word: "Craven", meaning: "coward" },
-  { emoji: "🥳", word: "Craze", meaning: "fad" },
-  { emoji: "🎊", word: "Culled", meaning: "collected" }
+  { emoji: "🌾", word: "Abundant", meaning: "plenty, assload" },         // crops = plenty
+  { emoji: "🏨", word: "Accommodation", meaning: "rooms" },             // hotel/rooms
+  { emoji: "🌱", word: "Acauline", meaning: "stemless" },               // stemless plant
+  { emoji: "💰", word: "Accrued", meaning: "accumulated" },             // accumulated wealth
+  { emoji: "🧠", word: "Acumen", meaning: "keenness of mind" },         // brain
+  { emoji: "🥓", word: "Adipose", meaning: "fatty" },                   // fat
+  { emoji: "✏️", word: "Adumbrate", meaning: "outline" },               // outline sketch
+  { emoji: "⚡", word: "Alacrity", meaning: "readiness" },              // lightning = quickness
+  { emoji: "💵", word: "Alimony", meaning: "maintenance" },             // money
+  { emoji: "🤝", word: "Altruistic", meaning: "helpful" },              // helping hands
+  { emoji: "❓", word: "Ambiguous", meaning: "unclear" },                // question mark
+  { emoji: "⚖️", word: "Ambiguity", meaning: "equivocation" },          // scales = balance/unclear
+  { emoji: "🔧", word: "Ameliorate", meaning: "improve" },              // tools = improve/fix
+  { emoji: "🍫", word: "Aphrodisiac", meaning: "libido booster" },      // chocolate = aphrodisiac
+  { emoji: "↔️", word: "Antithetical", meaning: "totally different" },   // opposite arrows
+  { emoji: "👀", word: "Apparent", meaning: "clearly seen" },           // eyes = clearly visible
+  { emoji: "📌", word: "Apropos", meaning: "relevant" },                // pin = on point/relevant
+  { emoji: "🎲", word: "Arbitrary", meaning: "random" },                // dice = random
+  { emoji: "📚", word: "Assiduity", meaning: "sedulousness" },          // books = diligence
+  { emoji: "📜", word: "Axiom", meaning: "maxim" }                      // scroll = rule/maxim
 ],
-  D: [
-  { emoji: "🏵️", word: "Dauntless", meaning: "fearless" },
-  { emoji: "🏵️", word: "Deem", meaning: "think" },
-  { emoji: "🏵️", word: "Deflect", meaning: "divert" },
-  { emoji: "🏵️", word: "Deleterious", meaning: "harmful" },
-  { emoji: "🏵️", word: "Demarche", meaning: "political step" },
-  { emoji: "🏵️", word: "Demotic", meaning: "popular" },
-  { emoji: "🏵️", word: "Dendritic", meaning: "tree-like structure" },
-  { emoji: "🏵️", word: "Denegation", meaning: "denial" },
-  { emoji: "🏵️", word: "Depose", meaning: "remove from office" },
-  { emoji: "🏵️", word: "Depredate", meaning: "pillage" },
-  { emoji: "🏵️", word: "Depurate", meaning: "purify" },
-  { emoji: "🏵️", word: "Dereliction", meaning: "dilapidation" },
-  { emoji: "🏵️", word: "Desist", meaning: "stop" },
-  { emoji: "🏵️", word: "Desipient", meaning: "foolish" },
-  { emoji: "🏵️", word: "Desquamate", meaning: "peel off" },
-  { emoji: "🏵️", word: "Diffident", meaning: "shy" },
-  { emoji: "🏵️", word: "Digress", meaning: "diverge" },
-  { emoji: "🏵️", word: "Drowsy", meaning: "sleepy" },
-  { emoji: "🏵️", word: "Dubiety", meaning: "doubt" },
-  { emoji: "🏵️", word: "Dudgeon", meaning: "anger" },
-  { emoji: "🏵️", word: "Dugong", meaning: "sea cow" },
-  { emoji: "🏵️", word: "Duroc", meaning: "red lard pig" },
-  { emoji: "🏵️", word: "Dwindle", meaning: "decrease" },
-  { emoji: "🏵️", word: "Dwadle", meaning: "loiter" }
+   B: [
+  { emoji: "📣", word: "Boisterous", meaning: "very loud" },             // megaphone
+  { emoji: "🛠️", word: "Bolster", meaning: "support" },                // tools = support
+  { emoji: "💌", word: "Billet-doux", meaning: "epistle, missive" },    // love letter
+  { emoji: "😄", word: "Blithesome", meaning: "a mirthful disposition" },// happy face
+  { emoji: "💥", word: "Blitz", meaning: "aerial bombardment" },        // explosion
+  { emoji: "🌩️", word: "Brontide", meaning: "rumbling sound" },        // thunder
+  { emoji: "😎", word: "Brazen", meaning: "bold & without shame" },     // confident face
+  { emoji: "🍑", word: "Buxom", meaning: "comely, plump" },            // plump peach
+  { emoji: "🌳", word: "Bucolic", meaning: "pastoral, rural" },        // tree = rural
+  { emoji: "💢", word: "Backlash", meaning: "negative reaction" },      // anger symbol
+  { emoji: "⚙️", word: "Banausic", meaning: "mechanical, utilitarian" },// gear = mechanical
+  { emoji: "🥤", word: "Beverage", meaning: "drink" },                 // cup/drink
+  { emoji: "🎁", word: "Bestow", meaning: "give" },                     // gift
+  { emoji: "🌫️", word: "Blurry", meaning: "unclear, cloudy" },         // fog
+  { emoji: "💣", word: "Bombard", meaning: "assault" },                 // bomb
+  { emoji: "🌪️", word: "Bodeful", meaning: "ominous" },                // tornado = ominous
+  { emoji: "☂️", word: "Brolly", meaning: "umbrella" },                 // umbrella
+  { emoji: "📢", word: "Bruit", meaning: "spread widely" },             // loudspeaker = spread
+  { emoji: "😐", word: "Brusque", meaning: "a curt reply" }            // neutral face = blunt/curt
 ], 
+   C: [
+  { emoji: "📦", word: "Caboodle", meaning: "entire lot" },            // box = everything
+  { emoji: "❌", word: "Call off", meaning: "cancel" },               // cross mark = cancel
+  { emoji: "🌋", word: "Caldera", meaning: "volcanic crater" },       // volcano
+  { emoji: "🏞️", word: "Canyon", meaning: "deep gorge" },            // canyon landscape
+  { emoji: "😡", word: "Cantankerous", meaning: "quarrelsome" },      // angry face
+  { emoji: "🎭", word: "Capricious", meaning: "fickle" },             // masks = changing moods
+  { emoji: "🐢", word: "Carapace", meaning: "shell / integument" },   // turtle shell
+  { emoji: "🎯", word: "Cast", meaning: "throw, (choose)" },          // dartboard = throw
+  { emoji: "🎰", word: "Casino", meaning: "gambling house" },         // slot machine
+  { emoji: "🤧", word: "Catarrh", meaning: "cold" },                  // sneezing face
+  { emoji: "🔷", word: "Catty-corner", meaning: "diagonal" },         // diamond = diagonal
+  { emoji: "🛑", word: "Cease", meaning: "stop" },                     // stop sign
+  { emoji: "🙈", word: "Cecity", meaning: "blindness" },              // see-no-evil monkey
+  { emoji: "🤴", word: "Chivalrous", meaning: "gallant" },            // knight/prince
+  { emoji: "📝", word: "Cite", meaning: "quote" },                     // paper/note
+  { emoji: "🧐", word: "Circumspect", meaning: "cautious" },          // monocle = careful
+  { emoji: "⚰️", word: "Cinerary", meaning: "ashes" },                // urn
+  { emoji: "🌧️", word: "Cloudburst", meaning: "sudden heavy rain" }, // heavy rain
+  { emoji: "💡", word: "Cogent", meaning: "convincing" },             // lightbulb = clear idea
+  { emoji: "🧠", word: "Cognition", meaning: "awareness" },           // brain
+  { emoji: "🏁", word: "Commence", meaning: "begin" },                // starting flag
+  { emoji: "👍", word: "Commendable", meaning: "good" },              // thumbs up
+  { emoji: "🤗", word: "Commiseration", meaning: "condolences" },     // hugging face
+  { emoji: "🍽️", word: "Comestibles", meaning: "eatables" },         // plate/food
+  { emoji: "📢", word: "Commination", meaning: "denunciation" },      // loudspeaker = announce punishment
+  { emoji: "😤", word: "Conceited", meaning: "proud, haughty" },      // proud face
+  { emoji: "⏱️", word: "Concurrently", meaning: "simultaneous" },     // stopwatch = simultaneous timing
+  { emoji: "🏆", word: "Condign", meaning: "worthy" },                 // trophy = deserved
+  { emoji: "🐄", word: "Confine / Corral", meaning: "enclosure" },    // fenced animal
+  { emoji: "😊", word: "Congenial", meaning: "pleasant" },            // smiling face
+  { emoji: "👀", word: "Conspicuous", meaning: "noticeable" },        // eyes = noticeable
+  { emoji: "🤔", word: "Contemplate", meaning: "think" },             // thinking face
+  { emoji: "🐠", word: "Coral", meaning: "sea organism" },            // coral/sea life
+  { emoji: "🏔️", word: "Cordillera", meaning: "chain of mountains" },// mountain chain
+  { emoji: "🚫", word: "Cordoned off", meaning: "closed off" },       // prohibited sign
+  { emoji: "🛁", word: "Cosset", meaning: "pamper" },                 // bathtub = pampering
+  { emoji: "🐥", word: "Craven", meaning: "coward" },                 // scared chick
+  { emoji: "🔥", word: "Craze", meaning: "fad" },                     // trending fire
+  { emoji: "📥", word: "Culled", meaning: "collected" }               // inbox = gathered/collected
+],
+ D: [
+  { emoji: "🦁", word: "Dauntless", meaning: "fearless" },           // lion = fearless
+  { emoji: "💭", word: "Deem", meaning: "think" },                  // thought bubble
+  { emoji: "↩️", word: "Deflect", meaning: "divert" },              // arrow deflecting
+  { emoji: "☠️", word: "Deleterious", meaning: "harmful" },         // skull = harmful
+  { emoji: "🏛️", word: "Demarche", meaning: "political step" },     // government building
+  { emoji: "🧑‍🤝‍🧑", word: "Demotic", meaning: "popular" },         // people together
+  { emoji: "🌿", word: "Dendritic", meaning: "tree-like structure" },// branch/tree
+  { emoji: "🚫", word: "Denegation", meaning: "denial" },           // prohibited sign
+  { emoji: "📤", word: "Depose", meaning: "remove from office" },    // outbox/removed
+  { emoji: "🏴‍☠️", word: "Depredate", meaning: "pillage" },         // pirate flag = pillage
+  { emoji: "💸", word: "Deprivation", meaning: "poverty" },         // empty wallet
+  { emoji: "💧", word: "Depurate", meaning: "purify" },             // water drop = purify
+  { emoji: "🏚️", word: "Dereliction", meaning: "dilapidation" },    // broken house
+  { emoji: "🛑", word: "Desist", meaning: "stop" },                  // stop sign
+  { emoji: "🤡", word: "Desipient", meaning: "foolish" },           // clown = foolish
+  { emoji: "🩹", word: "Desquamate", meaning: "peel off" },          // bandage = peeling skin
+  { emoji: "🙈", word: "Diffident", meaning: "shy" },               // shy monkey
+  { emoji: "↩️", word: "Digress", meaning: "diverge" },             // arrow turning
+  { emoji: "💪", word: "Diligent", meaning: "hardworking" },        // flexed arm
+  { emoji: "🔹", word: "Diminutive", meaning: "tiny" },             // small diamond
+  { emoji: "😵", word: "Discombobulate", meaning: "confuse" },      // dizzy face
+  { emoji: "⚖️", word: "Discriminatory", meaning: "unfair treatment" }, // scales = justice
+  { emoji: "😟", word: "Disconcert", meaning: "upset" },            // worried face
+  { emoji: "😒", word: "Disdain", meaning: "scorn" },               // unimpressed face
+  { emoji: "🧹", word: "Disheveled", meaning: "untidy" },           // messy broom
+  { emoji: "🌧️", word: "Dismal", meaning: "gloomy" },              // rainy cloud
+  { emoji: "✋", word: "Dissuade", meaning: "persuade not to" },     // hand = stop/prevent
+  { emoji: "😴", word: "Drowsy", meaning: "sleepy" },               // sleeping face
+  { emoji: "❓", word: "Dubiety", meaning: "doubt" },                // question mark
+  { emoji: "😠", word: "Dudgeon", meaning: "anger" },               // angry face
+  { emoji: "🐋", word: "Dugong", meaning: "sea cow" },              // sea cow
+  { emoji: "🐖", word: "Duroc", meaning: "red lard pig" },           // pig
+  { emoji: "📉", word: "Dwindle", meaning: "decrease" },            // downward chart
+  { emoji: "🚶‍♂️", word: "Dwadle", meaning: "loiter" }             // slow walking
+],
   E: [
   { emoji: "🏛️", word: "Edifice", meaning: "building" },
   { emoji: "💖", word: "Effusive", meaning: "overly emotional" },
@@ -125,6 +141,7 @@ function App() {
   { emoji: "📚", word: "Engrossed", meaning: "busy" },
   { emoji: "✨", word: "Entrancement", meaning: "ravishment" },
   { emoji: "🔮", word: "Envisage", meaning: "foresee" },
+  { emoji: "🔮", word: "Ephemeral", meaning: "short-lived" },
   { emoji: "😌", word: "Equanimity", meaning: "calm" },
   { emoji: "🗻", word: "Escarpment", meaning: "steep cliff" },
   { emoji: "👽", word: "Estranged", meaning: "alienated" },
@@ -140,74 +157,86 @@ function App() {
   { emoji: "💨", word: "Exhale", meaning: "breathe out" },
   { emoji: "🤮", word: "Expectorate", meaning: "spit" },
   { emoji: "🏅", word: "Eximious", meaning: "excellent" },
+  { emoji: "🫗", word: "Extinguish", meaning: "douse" },
   { emoji: "🫗", word: "Exude", meaning: "ooze" }
 ],
  F: [
-  { emoji: "🟥", word: "Facetious", meaning: "humorous" },
-  { emoji: "🟧", word: "Fallow", meaning: "uncultivated" },
-  { emoji: "🟨", word: "Fallacious", meaning: "false" },
-  { emoji: "🟩", word: "Fascinating", meaning: "very interesting" },
-  { emoji: "🟦", word: "Fatuous", meaning: "foolish" },
-  { emoji: "🟥", word: "Feasible", meaning: "possible" },
-  { emoji: "🟧", word: "Feasible", meaning: "possibly" },
-  { emoji: "🟨", word: "Feeble", meaning: "weak" },
-  { emoji: "🟩", word: "Feign", meaning: "pretend" },
-  { emoji: "🟦", word: "Flabbergasted", meaning: "shocked" },
-  { emoji: "🟥", word: "Flurry", meaning: "sudden gust of wind" },
-  { emoji: "🟧", word: "Forbearance", meaning: "tolerance" },
-  { emoji: "🟨", word: "Forlorn", meaning: "sad" },
-  { emoji: "🟩", word: "Fortuitous", meaning: "accidental" },
-  { emoji: "🟦", word: "Freelance", meaning: "independent worker" },
-  { emoji: "🟥", word: "Frivolous", meaning: "flippant" },
-  { emoji: "🟧", word: "Fraught", meaning: "crowded" },
-  { emoji: "🟨", word: "Frazzled", meaning: "exhausted" }
+  { emoji: "😆", word: "Facetious", meaning: "humorous" },           // laughing face
+  { emoji: "🌾", word: "Fallow", meaning: "uncultivated" },          // empty field
+  { emoji: "❌", word: "Fallacious", meaning: "false" },              // cross mark = false
+  { emoji: "🤩", word: "Fascinating", meaning: "very interesting" }, // starry eyes = amazement
+  { emoji: "🤪", word: "Fatuous", meaning: "foolish" },              // silly face
+  { emoji: "✅", word: "Feasible", meaning: "possible" },             // checkmark = possible
+  { emoji: "💪", word: "Feasible", meaning: "possibly" },             // muscle = able to do
+  { emoji: "🥱", word: "Feeble", meaning: "weak" },                  // tired/weak face
+  { emoji: "🎭", word: "Feign", meaning: "pretend" },                 // mask = pretend
+  { emoji: "😲", word: "Flabbergasted", meaning: "shocked" },        // shocked face
+  { emoji: "🌬️", word: "Flurry", meaning: "sudden gust of wind" },   // wind gust
+  { emoji: "🤝", word: "Forbearance", meaning: "tolerance" },         // handshake = patience/tolerance
+  { emoji: "😢", word: "Forlorn", meaning: "sad" },                   // crying face
+  { emoji: "🍀", word: "Fortuitous", meaning: "accidental" },         // four-leaf clover = luck
+  { emoji: "💻", word: "Freelance", meaning: "independent worker" },  // laptop = working independently
+  { emoji: "😏", word: "Frivolous", meaning: "flippant" },            // smirk = not serious
+  { emoji: "🫙", word: "Fraught", meaning: "crowded" },               // jar filled = full/crowded
+  { emoji: "🥵", word: "Frazzled", meaning: "exhausted" }            // overheated/tired face
 ],
-G:[
-  { emoji: "🎉", word: "Gallivant", meaning: "wander" },
-  { emoji: "🎊", word: "Gash", meaning: "deep cut" },
-  { emoji: "🎈", word: "Gelato", meaning: "ice-cream" },
-  { emoji: "🥳", word: "Gentry", meaning: "nobility" },
-  { emoji: "✨", word: "Gleaming", meaning: "shining" },
-  { emoji: "🎆", word: "Gobble", meaning: "guzzle" },
-  { emoji: "🎉", word: "Grange", meaning: "farmhouse" },
-  { emoji: "🎊", word: "Gravamen", meaning: "grievance" },
-  { emoji: "🎈", word: "Grime", meaning: "dirt" },
-  { emoji: "🥳", word: "Grimy", meaning: "dirty" },
-  { emoji: "✨", word: "Grope", meaning: "fumble" },
-  { emoji: "🎆", word: "Guerdon", meaning: "reward" },
-  { emoji: "🎉", word: "Gunk", meaning: "sticky dirt" },
-  { emoji: "🎊", word: "Gush", meaning: "flow quickly" }
+G: [
+  { emoji: "🚶‍♂️", word: "Gallivant", meaning: "wander" },        // person walking
+  { emoji: "🩸", word: "Gash", meaning: "deep cut" },             // blood drop for cut
+  { emoji: "🍨", word: "Gelato", meaning: "ice-cream" },          // ice cream
+  { emoji: "👑", word: "Gentry", meaning: "nobility" },           // crown for nobility
+  { emoji: "✨", word: "Gleaming", meaning: "shining" },           // sparkles
+  { emoji: "🍽️", word: "Gobble", meaning: "guzzle" },            // eating quickly
+  { emoji: "🏡", word: "Grange", meaning: "farmhouse" },           // house/farm
+  { emoji: "⚖️", word: "Gravamen", meaning: "grievance" },        // scales for legal grievance
+  { emoji: "🧹", word: "Grime", meaning: "dirt" },                 // broom/dirt
+  { emoji: "🛁", word: "Grimy", meaning: "dirty" },                // bathtub = need for cleaning
+  { emoji: "🤲", word: "Grope", meaning: "fumble" },               // hands fumble
+  { emoji: "🏆", word: "Guerdon", meaning: "reward" },             // trophy/reward
+  { emoji: "🕸️", word: "Gunk", meaning: "sticky dirt" },          // sticky web-like stuff
+  { emoji: "🌊", word: "Gush", meaning: "flow quickly" }           // water flow
 ],
-  H: [
-    { emoji: "🎊", word: "Habilement", meaning: "garment" },
-    { emoji: "🎊", word: "Harry", meaning: "attack" },
-    { emoji: "🎊", word: "Hapless", meaning: "unlucky" },
-    { emoji: "🎊", word: "Hard of hearing", meaning: "deaf" },
-    { emoji: "🎊", word: "Highfalutin", meaning: "grandiose" },
-    { emoji: "🎊", word: "Histrionic", meaning: "theatrical" },
-    { emoji: "🎊", word: "Hoard", meaning: "store" },
-    { emoji: "🎊", word: "Horde", meaning: "crowd" },
-    { emoji: "🎊", word: "Hurry", meaning: "haste" },
-    { emoji: "🎊", word: "Hypnotic", meaning: "trance-like" }
-  ],
+ H: [
+  { emoji: "👗", word: "Habilement", meaning: "garment" },       // clothing
+  { emoji: "⚔️", word: "Harry", meaning: "attack" },             // sword for attack
+  { emoji: "🍀", word: "Hapless", meaning: "unlucky" },          // unlucky clover
+  { emoji: "👂❌", word: "Hard of hearing", meaning: "deaf" },    // ear with cross
+  { emoji: "🎩", word: "Highfalutin", meaning: "grandiose" },    // fancy hat
+  { emoji: "🎭", word: "Histrionic", meaning: "theatrical" },    // theater mask
+  { emoji: "🏦", word: "Hoard", meaning: "store" },               // bank or storage
+  { emoji: "👥", word: "Horde", meaning: "crowd" },              // group of people
+  { emoji: "📣", word: "Hullabaloo", meaning: "fuss" },          // loudspeaker/fuss
+  { emoji: "🏃‍♂️💨", word: "Hurry", meaning: "haste" },          // running quickly
+  { emoji: "🌀", word: "Hypnotic", meaning: "trance-like" }      // spiral/trance
+],
   I: [
-    { emoji: "🎆", word: "Iffy", meaning: "uncertain" },
-    { emoji: "🎆", word: "Imbibe", meaning: "drink" },
-    { emoji: "🎆", word: "Imbue", meaning: "inspire" },
-    { emoji: "🎆", word: "Immaculate", meaning: "spotless" },
-    { emoji: "🎆", word: "Impertinent", meaning: "rude" },
-    { emoji: "🎆", word: "Implicate", meaning: "incriminate" },
-    { emoji: "🎆", word: "Imperceptible", meaning: "unnoticeable" },
-    { emoji: "🎆", word: "Indolent", meaning: "lazy" },
-    { emoji: "🎆", word: "Ineffable", meaning: "indescribable" },
-    { emoji: "🎆", word: "Inesperate", meaning: "unexpected" },
-    { emoji: "🎆", word: "Internship", meaning: "job training" },
-    { emoji: "🎆", word: "Inscrutable", meaning: "obscure" },
-    { emoji: "🎆", word: "Insidious", meaning: "stealthy" },
-    { emoji: "🎆", word: "Invariably", meaning: "always" },
-    { emoji: "🎆", word: "Invidious", meaning: "unpleasant" },
-    { emoji: "🎆", word: "Italic", meaning: "slanted" }
-  ],
+  { emoji: "❓", word: "Iffy", meaning: "uncertain" },            // question mark
+  { emoji: "🥤", word: "Imbibe", meaning: "drink" },             // drink cup
+  { emoji: "💡", word: "Imbue", meaning: "inspire" },            // light bulb = idea/inspiration
+  { emoji: "🧼", word: "Immaculate", meaning: "spotless" },      // soap/clean
+  { emoji: "🙄", word: "Impertinent", meaning: "rude" },         // annoyed face
+  { emoji: "🔗", word: "Implicate", meaning: "incriminate" },    // chain/link = involvement
+  { emoji: "👻", word: "Imperceptible", meaning: "unnoticeable" },// ghost = barely seen
+  { emoji: "⚡", word: "Impetuous", meaning: "impulsive" },      // lightning = sudden action
+  { emoji: "🪨", word: "Implacable", meaning: "unyielding" },    // rock = firm/unmoving
+  { emoji: "🤪", word: "Inane", meaning: "silly" },              // silly face
+  { emoji: "🙉", word: "Inaudible", meaning: "unhearable" },     // hear-no-evil monkey
+  { emoji: "🗡️", word: "Incisive", meaning: "sharp" },           // dagger/knife
+  { emoji: "🧩", word: "Incongruous", meaning: "out of place" },  // puzzle piece = doesn't fit
+  { emoji: "🖋️", word: "Indelible", meaning: "unforgettable" }, // pen = permanent mark
+  { emoji: "😡", word: "Indignant", meaning: "angry" },          // angry face
+  { emoji: "🛋️", word: "Indolent", meaning: "lazy" },            // couch = laziness
+  { emoji: "🤷‍♂️", word: "Inept", meaning: "unskilled" },       // shrug = clueless
+  { emoji: "✨", word: "Ineffable", meaning: "indescribable" },  // sparkle = beyond words
+  { emoji: "⚡", word: "Inesperate", meaning: "unexpected" },    // lightning = sudden/unexpected
+  { emoji: "🧐", word: "Inquisitive", meaning: "curious" },      // monocle = curious
+  { emoji: "💼", word: "Internship", meaning: "job training" },  // briefcase
+  { emoji: "🌫️", word: "Inscrutable", meaning: "obscure" },     // fog = hard to understand
+  { emoji: "🕵️‍♂️", word: "Insidious", meaning: "stealthy" },   // spy
+  { emoji: "♾️", word: "Invariably", meaning: "always" },        // infinity = always
+  { emoji: "😒", word: "Invidious", meaning: "unpleasant" },     // displeased face
+  { emoji: "↘️", word: "Italic", meaning: "slanted" }            // slanted arrow
+],
   J: [
   { emoji: "🪬", word: "Jejune", meaning: "bare" },
   { emoji: "🪬", word: "Jeopardy", meaning: "danger" },
@@ -221,6 +250,7 @@ K: [
     { emoji: "🧡", word: "Lackadaisical", meaning: "lazy" },
     { emoji: "💛", word: "Lachrymose", meaning: "tearful" },
     { emoji: "💚", word: "Laconic", meaning: "brief" },
+    { emoji: "💚", word: "Lair", meaning: "den" },
     { emoji: "💙", word: "Languid", meaning: "weak" },
     { emoji: "💜", word: "Larceny", meaning: "theft" },
     { emoji: "🤎", word: "Largesse", meaning: "generosity" },
@@ -229,6 +259,7 @@ K: [
     { emoji: "🧡", word: "Laud", meaning: "praise" },
     { emoji: "❤️", word: "Lavish", meaning: "luxurious" },
     { emoji: "💛", word: "Lax", meaning: "loose" },
+    { emoji: "💛", word: "Lay off", meaning: "sacking" },
     { emoji: "💚", word: "Lithe", meaning: "flexible" },
     { emoji: "💙", word: "Loathe", meaning: "hate" },
     { emoji: "💜", word: "Loquacious", meaning: "talkative" },
@@ -258,6 +289,7 @@ K: [
     { emoji: "💟", word: "Miffed", meaning: "annoyed" },
     { emoji: "❣️", word: "Milieu", meaning: "environment" },
     { emoji: "💌", word: "Mimic", meaning: "copy" },
+    { emoji: "💌", word: "Minatory", meaning: "threatening" },
     { emoji: "💖", word: "Minuscule", meaning: "tiny" },
     { emoji: "💘", word: "Miscreant", meaning: "criminal" },
     { emoji: "💝", word: "Mitigate", meaning: "reduce" },
@@ -267,6 +299,7 @@ K: [
     { emoji: "💓", word: "Morbid", meaning: "gloomy" },
     { emoji: "💟", word: "Mores", meaning: "customs" },
     { emoji: "❣️", word: "Mordant", meaning: "sarcastic" },
+    { emoji: "❣️", word: "Moratorium", meaning: "embargo, pause" },
     { emoji: "💌", word: "Morose", meaning: "depressed" },
     { emoji: "💖", word: "Mundane", meaning: "ordinary" }
   ],
@@ -306,63 +339,68 @@ O: [
   { emoji: "💗", word: "Ordinance", meaning: "edict" }
 ],
 P: [
-  { emoji: "🥀", word: "Palatial", meaning: "palace-like" },
-  { emoji: "🥀", word: "Palliate", meaning: "reduce pain" },
-  { emoji: "🥀", word: "Palpable", meaning: "touchable" },
-  { emoji: "🥀", word: "Panacea", meaning: "cure-all" },
-  { emoji: "🥀", word: "Panache", meaning: "flair" },
-  { emoji: "🥀", word: "Pandemonium", meaning: "chaos" },
-  { emoji: "🥀", word: "Parable", meaning: "moral story" },
-  { emoji: "🥀", word: "Paradox", meaning: "contradiction" },
-  { emoji: "🥀", word: "Paragon", meaning: "perfect example" },
-  { emoji: "🥀", word: "Paramount", meaning: "most important" },
-  { emoji: "🥀", word: "Pariah", meaning: "outcast" },
-  { emoji: "🥀", word: "Parsimonious", meaning: "stingy" },
-  { emoji: "🥀", word: "Paucity", meaning: "lack" },
-  { emoji: "🥀", word: "Pejorative", meaning: "insulting" },
-  { emoji: "🥀", word: "Penchant", meaning: "liking" },
-  { emoji: "🥀", word: "Penitent", meaning: "sorry" },
-  { emoji: "🥀", word: "Perfunctory", meaning: "careless work" },
-  { emoji: "🥀", word: "Pernicious", meaning: "harmful" },
-  { emoji: "🥀", word: "Perplexed", meaning: "confused" },
-  { emoji: "🥀", word: "Persevere", meaning: "continue" },
-  { emoji: "🥀", word: "Persistent", meaning: "continuing" },
-  { emoji: "🥀", word: "Pertinent", meaning: "relevant" },
-  { emoji: "🥀", word: "Peruse", meaning: "read carefully" },
-  { emoji: "🥀", word: "Pervasive", meaning: "everywhere, prevalent" },
-  { emoji: "🥀", word: "Petrichor", meaning: "smell after rain" },
-  { emoji: "🥀", word: "Petulant", meaning: "irritable" },
-  { emoji: "🥀", word: "Phenomenon", meaning: "amazing event" },
-  { emoji: "🥀", word: "Philanthropy", meaning: "charity" },
-  { emoji: "🥀", word: "Pious", meaning: "religious" },
-  { emoji: "🥀", word: "Pinnacle", meaning: "highest point" },
-  { emoji: "🥀", word: "Piquant", meaning: "spicy" },
-  { emoji: "🥀", word: "Placate", meaning: "calm" },
-  { emoji: "🥀", word: "Placid", meaning: "peaceful" },
-  { emoji: "🥀", word: "Plummet", meaning: "fall quickly" },
-  { emoji: "🥀", word: "Plurality", meaning: "majority" },
-  { emoji: "🥀", word: "Poignant", meaning: "emotionally touching" },
-  { emoji: "🥀", word: "Polarize", meaning: "divide" },
-  { emoji: "🥀", word: "Potent", meaning: "powerful" },
-  { emoji: "🥀", word: "Pragmatic", meaning: "practical" },
-  { emoji: "🥀", word: "Premonition", meaning: "warning" },
-  { emoji: "🥀", word: "Preposterous", meaning: "ridiculous" },
-  { emoji: "🥀", word: "Prescient", meaning: "knowing before" },
-  { emoji: "🥀", word: "Pretentious", meaning: "showy" },
-  { emoji: "🥀", word: "Proclivity", meaning: "habit / tendency" },
-  { emoji: "🥀", word: "Prodigious", meaning: "enormous" },
-  { emoji: "🥀", word: "Prodigy", meaning: "genius child" },
-  { emoji: "🥀", word: "Proliferate", meaning: "multiply" },
-  { emoji: "🥀", word: "Prologue", meaning: "intro section" },
-  { emoji: "🥀", word: "Promulgate", meaning: "announce" },
-  { emoji: "🥀", word: "Prosaic", meaning: "dull" },
-  { emoji: "🥀", word: "Protagonist", meaning: "main character" },
-  { emoji: "🥀", word: "Protract", meaning: "extend" },
-  { emoji: "🥀", word: "Provocation", meaning: "causing anger" },
-  { emoji: "🥀", word: "Pseudonym", meaning: "fake name" },
-  { emoji: "🥀", word: "Puerile", meaning: "childish" },
-  { emoji: "🥀", word: "Pulchritude", meaning: "beauty" },
-  { emoji: "🥀", word: "Pungent", meaning: "strong smell" }
+  { emoji: "🏰", word: "Palatial", meaning: "palace-like" },             // castle = palace
+  { emoji: "💊", word: "Palliate", meaning: "reduce pain" },             // pill/medicine
+  { emoji: "✋", word: "Palpable", meaning: "touchable" },               // hand = tangible
+  { emoji: "🩺", word: "Panacea", meaning: "cure-all" },                 // medical = cure
+  { emoji: "🎩", word: "Panache", meaning: "flair" },                    // top hat = stylish flair
+  { emoji: "🌪️", word: "Pandemonium", meaning: "chaos" },               // tornado = chaos
+  { emoji: "📖", word: "Parable", meaning: "moral story" },              // open book
+  { emoji: "🔄", word: "Paradox", meaning: "contradiction" },            // loop arrows = contradiction
+  { emoji: "🏅", word: "Paragon", meaning: "perfect example" },           // medal = exemplary
+  { emoji: "📌", word: "Paramount", meaning: "most important" },         // pin = top priority
+  { emoji: "🚷", word: "Pariah", meaning: "outcast" },                    // no-entry = excluded
+  { emoji: "⚖️", word: "Parity", meaning: "equality" },                  // scales = equality
+  { emoji: "💰", word: "Parsimonious", meaning: "stingy" },              // money = stingy
+  { emoji: "🤝", word: "Partake", meaning: "participate" },              // handshake = join
+  { emoji: "🎭", word: "Patsy", meaning: "fall guy" },                   // mask = manipulated
+  { emoji: "🌸", word: "Pauciloflorous", meaning: "few-flowered" },      // small flowers
+  { emoji: "📉", word: "Paucity", meaning: "lack" },                     // downward chart = lack
+  { emoji: "😒", word: "Pejorative", meaning: "insulting" },             // unimpressed face
+  { emoji: "❤️", word: "Penchant", meaning: "liking" },                  // heart = liking
+  { emoji: "🙏", word: "Penitent", meaning: "sorry" },                   // praying hands = apology
+  { emoji: "📝", word: "Perfunctory", meaning: "careless work" },        // scribbled paper = careless
+  { emoji: "☠️", word: "Pernicious", meaning: "harmful" },               // skull = harmful
+  { emoji: "😕", word: "Perplexed", meaning: "confused" },               // confused face
+  { emoji: "🏃‍♂️", word: "Persevere", meaning: "continue" },            // running = keep going
+  { emoji: "⏳", word: "Persistent", meaning: "continuing" },            // hourglass = ongoing
+  { emoji: "📌", word: "Pertinent", meaning: "relevant" },               // pin = relevant
+  { emoji: "📚", word: "Peruse", meaning: "read carefully" },            // stack of books
+  { emoji: "🌍", word: "Pervasive", meaning: "everywhere, prevalent" }, // globe = everywhere
+  { emoji: "🌧️", word: "Petrichor", meaning: "smell after rain" },      // rain = smell
+  { emoji: "😡", word: "Petulant", meaning: "irritable" },               // annoyed face
+  { emoji: "🌠", word: "Phenomenon", meaning: "amazing event" },        // shooting star = amazing
+  { emoji: "🎁", word: "Philanthropy", meaning: "charity" },             // gift = charity
+  { emoji: "⛪", word: "Pious", meaning: "religious" },                   // church = religious
+  { emoji: "🏔️", word: "Pinnacle", meaning: "highest point" },           // mountain peak
+  { emoji: "🌶️", word: "Piquant", meaning: "spicy" },                   // chili = spicy
+  { emoji: "🕊️", word: "Placate", meaning: "calm" },                    // dove = calm
+  { emoji: "🌊", word: "Placid", meaning: "peaceful" },                  // calm water
+  { emoji: "📉", word: "Plummet", meaning: "fall quickly" },             // falling chart
+  { emoji: "👥", word: "Plurality", meaning: "majority" },               // multiple people
+  { emoji: "😭", word: "Poignant", meaning: "emotionally touching" },    // crying face
+  { emoji: "⚔️", word: "Polarize", meaning: "divide" },                  // crossed swords = divide
+  { emoji: "💪", word: "Potent", meaning: "powerful" },                  // flexed arm
+  { emoji: "🛠️", word: "Pragmatic", meaning: "practical" },             // hammer & tools
+  { emoji: "⚠️", word: "Premonition", meaning: "warning" },             // warning sign
+  { emoji: "🤯", word: "Preposterous", meaning: "ridiculous" },         // exploding head
+  { emoji: "🔮", word: "Prescient", meaning: "knowing before" },        // crystal ball
+  { emoji: "💎", word: "Pretentious", meaning: "showy" },               // jewel = showy
+  { emoji: "🎲", word: "Probability", meaning: "likelihood" },           // dice = chance
+  { emoji: "🌀", word: "Proclivity", meaning: "habit / tendency" },      // swirl = recurring
+  { emoji: "🌋", word: "Prodigious", meaning: "enormous" },             // volcano = huge
+  { emoji: "👶", word: "Prodigy", meaning: "genius child" },            // baby = child prodigy
+  { emoji: "➕", word: "Proliferate", meaning: "multiply" },             // plus sign = multiply
+  { emoji: "📖", word: "Prologue", meaning: "intro section" },          // book = beginning
+  { emoji: "📣", word: "Promulgate", meaning: "announce" },             // megaphone
+  { emoji: "😐", word: "Prosaic", meaning: "dull" },                    // neutral face
+  { emoji: "🎭", word: "Protagonist", meaning: "main character" },      // mask = main role
+  { emoji: "⏳", word: "Protract", meaning: "extend" },                  // hourglass = extend
+  { emoji: "😤", word: "Provocation", meaning: "causing anger" },       // angry face
+  { emoji: "✍️", word: "Pseudonym", meaning: "fake name" },             // writing = fake author
+  { emoji: "🧸", word: "Puerile", meaning: "childish" },                // teddy bear
+  { emoji: "💃", word: "Pulchritude", meaning: "beauty" },              // dancer = beautiful
+  { emoji: "🧄", word: "Pungent", meaning: "strong smell" }             // garlic = strong smell
 ],
 Q: [
   { emoji: "💠", word: "Quagmire", meaning: "difficult situation" },
@@ -370,93 +408,110 @@ Q: [
   { emoji: "💠", word: "Quaint", meaning: "charming" },
   { emoji: "💠", word: "Qualm", meaning: "worry" },
   { emoji: "💠", word: "Quandary", meaning: "confusion" },
+  { emoji: "💠", word: "Quarantined", meaning: "isolated" },
   { emoji: "💠", word: "Quell", meaning: "stop" },
   { emoji: "💠", word: "Querulous", meaning: "complaining" },
   { emoji: "💠", word: "Quibble", meaning: "argue small things" },
   { emoji: "💠", word: "Quiescent", meaning: "inactive" },
   { emoji: "💠", word: "Quintessential", meaning: "perfect example" },
-  { emoji: "💠", word: "Quixotic", meaning: "unrealistically hopeful" }
+  { emoji: "💠", word: "Quixotic", meaning: "unrealistically hopeful" },
+  { emoji: "💠", word: "Quotidian", meaning: "daily" } 
 ],
 R: [
-  { emoji: "🧊", word: "Rabid", meaning: "extreme" },
-  { emoji: "🧊", word: "Raconteur", meaning: "storyteller" },
-  { emoji: "🧊", word: "Rampant", meaning: "uncontrolled" },
-  { emoji: "🧊", word: "Rancor", meaning: "bitterness" },
-  { emoji: "🧊", word: "Rapacious", meaning: "greedy" },
-  { emoji: "🧊", word: "Ratify", meaning: "approve" },
-  { emoji: "🧊", word: "Raucous", meaning: "noisy" },
-  { emoji: "🧊", word: "Ravage", meaning: "destroy" },
-  { emoji: "🧊", word: "Ravenous", meaning: "very hungry" },
-  { emoji: "🧊", word: "Rebuff", meaning: "reject" },
-  { emoji: "🧊", word: "Rebuke", meaning: "scold" },
-  { emoji: "🧊", word: "Recalcitrant", meaning: "stubborn" },
-  { emoji: "🧊", word: "Recapitulate", meaning: "summarize" },
-  { emoji: "🧊", word: "Reciprocal", meaning: "mutual" },
-  { emoji: "🧊", word: "Recluse", meaning: "loner" },
-  { emoji: "🧊", word: "Reconcile", meaning: "restore friendship" },
-  { emoji: "🧊", word: "Recondite", meaning: "obscure" },
-  { emoji: "🧊", word: "Recrimination", meaning: "blame back" },
-  { emoji: "🧊", word: "Rectify", meaning: "fix" },
-  { emoji: "🧊", word: "Redolent", meaning: "smelling of" },
-  { emoji: "🧊", word: "Redundant", meaning: "extra" },
-  { emoji: "🧊", word: "Refute", meaning: "disprove" },
-  { emoji: "🧊", word: "Regale", meaning: "entertain" },
-  { emoji: "🧊", word: "Regimen", meaning: "routine" },
-  { emoji: "🧊", word: "Reiterate", meaning: "repeat" },
-  { emoji: "🧊", word: "Relinquish", meaning: "give up" },
-  { emoji: "🧊", word: "Remorse", meaning: "regret" },
-  { emoji: "🧊", word: "Renovate", meaning: "restore" },
-  { emoji: "🧊", word: "Reparation", meaning: "compensation" },
-  { emoji: "🧊", word: "Repertoire", meaning: "skill list" },
-  { emoji: "🧊", word: "Reprehensible", meaning: "shameful" },
-  { emoji: "🧊", word: "Repress", meaning: "hold back" },
-  { emoji: "🧊", word: "Reprimand", meaning: "scold" },
-  { emoji: "🧊", word: "Reproach", meaning: "blame" },
-  { emoji: "🧊", word: "Reprove", meaning: "gentle criticism" },
-  { emoji: "🧊", word: "Rescind", meaning: "cancel" },
-  { emoji: "🧊", word: "Resilient", meaning: "quickly recovering" },
-  { emoji: "🧊", word: "Resonant", meaning: "echoing" },
-  { emoji: "🧊", word: "Resolute", meaning: "determined" },
-  { emoji: "🧊", word: "Respite", meaning: "rest" },
-  { emoji: "🧊", word: "Restitution", meaning: "return something" },
-  { emoji: "🧊", word: "Reticent", meaning: "silent" },
-  { emoji: "🧊", word: "Retract", meaning: "take back" },
-  { emoji: "🧊", word: "Revere", meaning: "respect deeply" },
-  { emoji: "🧊", word: "Reverie", meaning: "daydream" },
-  { emoji: "🧊", word: "Revile", meaning: "insult" },
-  { emoji: "🧊", word: "Rhapsody", meaning: "emotional speech" },
-  { emoji: "🧊", word: "Rhetoric", meaning: "persuasive speech" },
-  { emoji: "🧊", word: "Rigorous", meaning: "strict" },
-  { emoji: "🧊", word: "Rudimentary", meaning: "basic" },
-  { emoji: "🧊", word: "Rue", meaning: "regret" }
+  { emoji: "🐺", word: "Rabid", meaning: "extreme" },                    // wild/ferocious
+  { emoji: "📖", word: "Raconteur", meaning: "storyteller" },            // book = storyteller
+  { emoji: "🌿", word: "Rampant", meaning: "uncontrolled" },             // overgrowing plants
+  { emoji: "💥", word: "Rampage", meaning: "riot" },                     // explosion = chaos
+  { emoji: "🥶", word: "Rancor", meaning: "bitterness" },                // icy face = bitter
+  { emoji: "🦁", word: "Rapacious", meaning: "greedy" },                  // lion = greed / devouring
+  { emoji: "🤝", word: "Rapport", meaning: "connection" },                // handshake = connection
+  { emoji: "✅", word: "Ratify", meaning: "approve" },                    // checkmark = approve
+  { emoji: "🔊", word: "Raucous", meaning: "noisy" },                     // speaker = loud
+  { emoji: "💣", word: "Ravage", meaning: "destroy" },                    // bomb = destruction
+  { emoji: "🍽️", word: "Ravenous", meaning: "very hungry" },             // plate = hungry
+  { emoji: "❌", word: "Rebuff", meaning: "reject" },                     // cross mark = reject
+  { emoji: "👎", word: "Rebuke", meaning: "scold" },                      // thumbs down
+  { emoji: "🪨", word: "Recalcitrant", meaning: "stubborn" },             // rock = stubborn
+  { emoji: "📑", word: "Recapitulate", meaning: "summarize" },            // documents = summary
+  { emoji: "🔄", word: "Reciprocal", meaning: "mutual" },                 // arrows = mutual
+  { emoji: "🏚️", word: "Recluse", meaning: "loner" },                     // isolated house
+  { emoji: "🤝", word: "Reconcile", meaning: "restore friendship" },     // handshake
+  { emoji: "📚", word: "Recondite", meaning: "obscure" },                 // stacked books = hard to understand
+  { emoji: "⚡", word: "Recrimination", meaning: "blame back" },           // lightning = attack back
+  { emoji: "🛠️", word: "Rectify", meaning: "fix" },                       // tools = fix
+  { emoji: "🌹", word: "Redolent", meaning: "smelling of" },              // rose = fragrance
+  { emoji: "➕", word: "Redundant", meaning: "extra" },                    // plus sign = extra
+  { emoji: "❌", word: "Refute", meaning: "disprove" },                    // cross mark = disprove
+  { emoji: "🎉", word: "Regale", meaning: "entertain" },                  // party = entertain
+  { emoji: "📅", word: "Regimen", meaning: "routine" },                   // calendar = routine
+  { emoji: "🔁", word: "Reiterate", meaning: "repeat" },                  // repeat arrows
+  { emoji: "✋", word: "Relinquish", meaning: "give up" },                // raised hand = let go
+  { emoji: "😔", word: "Remorse", meaning: "regret" },                    // sad face
+  { emoji: "🏗️", word: "Renovate", meaning: "restore" },                 // construction = restore
+  { emoji: "💵", word: "Reparation", meaning: "compensation" },           // money = compensation
+  { emoji: "🛠️", word: "Repertoire", meaning: "skill list" },            // tools = skills
+  { emoji: "😡", word: "Reprehensible", meaning: "shameful" },            // angry face
+  { emoji: "🙅‍♂️", word: "Repress", meaning: "hold back" },               // crossed arms
+  { emoji: "👎", word: "Reprimand", meaning: "scold" },                   // thumbs down
+  { emoji: "⚠️", word: "Reproach", meaning: "blame" },                    // warning = blame
+  { emoji: "🤏", word: "Reprove", meaning: "gentle criticism" },          // pinch hand = gentle
+  { emoji: "❌", word: "Rescind", meaning: "cancel" },                     // cross mark
+  { emoji: "💪", word: "Resilient", meaning: "quickly recovering" },      // flexed arm
+  { emoji: "🔊", word: "Resonant", meaning: "echoing" },                  // sound waves
+  { emoji: "🎯", word: "Resolute", meaning: "determined" },               // bullseye = focused
+  { emoji: "😌", word: "Respite", meaning: "rest" },                      // relaxed face
+  { emoji: "↩️", word: "Restitution", meaning: "return something" },      // return arrow
+  { emoji: "🤐", word: "Reticent", meaning: "silent" },                   // zipped mouth
+  { emoji: "↩️", word: "Retract", meaning: "take back" },                 // return arrow
+  { emoji: "🙏", word: "Revere", meaning: "respect deeply" },             // praying hands
+  { emoji: "💭", word: "Reverie", meaning: "daydream" },                  // thought bubble
+  { emoji: "😡", word: "Revile", meaning: "insult" },                     // angry face
+  { emoji: "🎶", word: "Rhapsody", meaning: "emotional speech" },         // musical notes
+  { emoji: "🗣️", word: "Rhetoric", meaning: "persuasive speech" },       // speaking
+  { emoji: "📏", word: "Rigorous", meaning: "strict" },                   // ruler = strict
+  { emoji: "🆕", word: "Rookie", meaning: "a new recruit" },               // new = beginner
+  { emoji: "📚", word: "Rudimentary", meaning: "basic" },                 // book = basics
+  { emoji: "😞", word: "Rue", meaning: "regret" }                         // sad face
 ],
 S: [
-  { emoji: "💎", word: "Sallow", meaning: "unhealthy look" },
-  { emoji: "💎", word: "Scanty", meaning: "less" },
-  { emoji: "💎", word: "Scholar", meaning: "student" },
-  { emoji: "💎", word: "Scour", meaning: "scrub" },
-  { emoji: "💎", word: "Scurry", meaning: "move quickly" },
-  { emoji: "💎", word: "Sedentary", meaning: "sitting" },
-  { emoji: "💎", word: "Serviette", meaning: "napkin" },
-  { emoji: "💎", word: "Sinuous", meaning: "winding" },
-  { emoji: "💎", word: "Slapdash", meaning: "careless" },
-  { emoji: "💎", word: "Slumber", meaning: "sleep" },
-  { emoji: "💎", word: "Sneak", meaning: "move quietly" },
-  { emoji: "💎", word: "Squeamish", meaning: "nervous" },
-  { emoji: "💎", word: "Stymie", meaning: "obstruct" },
-  { emoji: "💎", word: "Succedaneum", meaning: "substitute" },
-  { emoji: "💎", word: "Submissive", meaning: "obedient" },
-  { emoji: "💎", word: "Suborned", meaning: "bribed" },
-  { emoji: "💎", word: "Subpar", meaning: "below average" },
-  { emoji: "💎", word: "Soaring", meaning: "rising" },
-  { emoji: "💎", word: "Sod", meaning: "grassy land" },
-  { emoji: "💎", word: "Solemn", meaning: "serious" },
-  { emoji: "💎", word: "Solemnly", meaning: "seriously" },
-  { emoji: "💎", word: "Spillway", meaning: "dam water exit" },
-  { emoji: "💎", word: "Stoical", meaning: "unemotional" },
-  { emoji: "💎", word: "Super-duper", meaning: "very great" },
-  { emoji: "💎", word: "Swamped", meaning: "very busy" },
-  { emoji: "💎", word: "So hectic", meaning: "very busy" }
+  { emoji: "🤢", word: "Sallow", meaning: "unhealthy look" },                // greenish sick face
+  { emoji: "🔹", word: "Scanty", meaning: "less" },                           // small diamond = little
+  { emoji: "🎓", word: "Scholar", meaning: "student" },                       // graduation cap
+  { emoji: "🧽", word: "Scour", meaning: "scrub" },                            // sponge
+  { emoji: "🐇", word: "Scurry", meaning: "move quickly" },                    // running rabbit
+  { emoji: "🪑", word: "Sedentary", meaning: "sitting" },                      // chair
+  { emoji: "🍽️", word: "Serviette", meaning: "napkin" },                      // plate with napkin
+  { emoji: "🐍", word: "Sinuous", meaning: "winding" },                        // snake = winding
+  { emoji: "🪞", word: "Simulacrum", meaning: "likeness" },                    // mirror = likeness
+  { emoji: "⚔️", word: "Skirmish", meaning: "clash" },                         // crossed swords
+  { emoji: "🚀", word: "Skyrocket", meaning: "increase very steeply" },        // rocket
+  { emoji: "💨", word: "Slapdash", meaning: "careless" },                      // gust of wind = careless
+  { emoji: "😴", word: "Slumber", meaning: "sleep" },                           // sleeping face
+  { emoji: "🕵️‍♂️", word: "Sneak", meaning: "move quietly" },                   // spy = sneaky
+  { emoji: "😬", word: "Squeamish", meaning: "nervous" },                       // uneasy face
+  { emoji: "🛑", word: "Stymie", meaning: "obstruct" },                          // stop sign
+  { emoji: "🔄", word: "Succedaneum", meaning: "substitute" },                  // repeat arrows = replacement
+  { emoji: "🙇‍♂️", word: "Submissive", meaning: "obedient" },                   // bowing person
+  { emoji: "💰", word: "Substantial", meaning: "considerable" },                // money bag = large amount
+  { emoji: "💸", word: "Suborned", meaning: "bribed" },                          // money flying = bribed
+  { emoji: "📉", word: "Subpar", meaning: "below average" },                     // down chart
+  { emoji: "🕊️", word: "Soaring", meaning: "rising" },                           // bird flying
+  { emoji: "🌱", word: "Sod", meaning: "grassy land" },                           // grass
+  { emoji: "🪦", word: "Solemn", meaning: "serious" },                             // gravestone = solemn
+  { emoji: "🪦", word: "Solemnly", meaning: "seriously" },                         // same as solemn
+  { emoji: "💧", word: "Spillway", meaning: "dam water exit" },                    // water drop
+  { emoji: "🏛️", word: "Spartan", meaning: "simple" },                             // classical building = simple
+  { emoji: "✨", word: "Spiffy", meaning: "stylish" },                               // sparkles
+  { emoji: "❌", word: "Spurn", meaning: "reject" },                                  // cross mark
+  { emoji: "💸", word: "Squander", meaning: "waste" },                               // money flying = waste
+  { emoji: "🪑", word: "Staid", meaning: "serious" },                                  // chair = steady/serious
+  { emoji: "🧍‍♂️", word: "Stance", meaning: "posture" },                              // standing person
+  { emoji: "🤝", word: "Stalwart", meaning: "loyal" },                                 // handshake
+  { emoji: "📢", word: "Stentorian", meaning: "loud" },                                // megaphone
+  { emoji: "😐", word: "Stoical", meaning: "unemotional" },                              // neutral face
+  { emoji: "🌟", word: "Super-duper", meaning: "very great" },                          // star = great
+  { emoji: "📚", word: "Swamped", meaning: "very busy" },                                 // pile of books = busy
+  { emoji: "📚", word: "So hectic", meaning: "very busy" }                                 // same as above
 ],
 T: [
   { emoji: "🌟", word: "Tableau", meaning: "picture" },
@@ -464,13 +519,23 @@ T: [
   { emoji: "🌟", word: "Tarry", meaning: "delay" },
   { emoji: "🌟", word: "Teamwork", meaning: "cooperative work" },
   { emoji: "🌟", word: "Throe", meaning: "spasm" },
+  { emoji: "🌟", word: "Timorous", meaning: "fearful" },
+  { emoji: "🌟", word: "Tirade", meaning: "long angry speech" },
+  { emoji: "🌟", word: "Toilsome", meaning: "arduous" },
+  { emoji: "🌟", word: "Touchy", meaning: "irritable" },
   { emoji: "🌟", word: "Toadying", meaning: "sycophancy" },
+  { emoji: "🌟", word: "Tome", meaning: "book" },
   { emoji: "🌟", word: "Totile", meaning: "twisted" },
   { emoji: "🌟", word: "Traverse", meaning: "walk" },
   { emoji: "🌟", word: "Turpitude", meaning: "wickedness" }
 ],
 U: [
   { emoji: "⚜️", word: "Unflappable", meaning: "calm" },
+  { emoji: "⚜️", word: "Ungainly", meaning: "awkward" },
+  { emoji: "⚜️", word: "Unilateral", meaning: "one-sided" },
+  { emoji: "⚜️", word: "Unobtrusive", meaning: "not noticeable" },
+  { emoji: "⚜️", word: "Unprecedented", meaning: "never before" },
+  { emoji: "⚜️", word: "Unscathed", meaning: "unharmed" },
   { emoji: "⚜️", word: "Unwieldy", meaning: "hard to move" },
   { emoji: "⚜️", word: "Upbeat", meaning: "cheerful" }
 ],
