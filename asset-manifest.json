@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/az-vocabulary/static/css/main.a0494717.css",
+    "main.css": "/az-vocabulary/static/css/main.c4cdb5fd.css",
     "main.js": "/az-vocabulary/static/js/main.b60009cb.js",
     "index.html": "/az-vocabulary/index.html",
-    "main.a0494717.css.map": "/az-vocabulary/static/css/main.a0494717.css.map",
+    "main.c4cdb5fd.css.map": "/az-vocabulary/static/css/main.c4cdb5fd.css.map",
     "main.b60009cb.js.map": "/az-vocabulary/static/js/main.b60009cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0494717.css",
+    "static/css/main.c4cdb5fd.css",
     "static/js/main.b60009cb.js"
   ]
 }
